@@ -26,11 +26,9 @@ const reducer = (state,action)=>{
             return state
     }
 }
-export const GlobalContext = createContext(initialState)
-// export const useGlobalState=()=>{
-//     return useContext(GlobalContext)
-// }
+export const GlobalContext = createContext(initialState);
 //Provider component
+
 export const GlobalProvider = ({children})=>{
     const [state,dispatch] = useReducer(reducer,initialState)
     return(
