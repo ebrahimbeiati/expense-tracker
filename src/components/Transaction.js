@@ -3,7 +3,12 @@ import { GlobalContext } from '../context/GlobalState';
 
 const Transaction = ({transaction}) => {
   const {deleteTransaction}= useContext(GlobalContext);
+
   //Add transaction
+
+  
+
+
     //sign for transaction
     const sign = transaction.amount < 0 ? '-' : '+';
   return (
